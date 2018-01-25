@@ -34,6 +34,7 @@ $(document).ready(() => {
 
   function createPersonElement(person) {
     let root = document.createElement('div');
+    root.className = 'person';
 
     let name = document.createElement('div');
     name.className = 'name';

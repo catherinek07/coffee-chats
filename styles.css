@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  background-color: #fdf6e3;
+}
+
 body {
   font-family: 'Libre Baskerville', serif;
 
@@ -19,6 +23,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 700;
+  color: rgba(0,0,0,0.8);
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: rgba(0,0,0,0.7);
+  font-size: 24px;
+}
+
+div {
+  font-size: 16px;
+  color: rgba(0,0,0,0.7);
+  line-height: 1.5;
 }
 
 .divider {
@@ -26,4 +43,10 @@ h1 {
 }
 
 #people {
+
+}
+
+.person {
+  display: flex;
+  margin-bottom: 16px;
 }
