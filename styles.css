@@ -1,0 +1,29 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+
+  margin: 100px auto;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.divider {
+  margin: 32px 0;
+}
+
+#people {
+}
