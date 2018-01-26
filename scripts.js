@@ -1,3 +1,17 @@
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+}
+
 $(document).ready(() => {
   $.get('./responses.tsv', processResponse);
 
@@ -22,6 +36,7 @@ $(document).ready(() => {
   // Parse and render response
   function processResponse(resp) {
     let people = parseResponse(resp);
+    shuffle(people); // Mix up the order each time so no one is always at the top
     renderPeople(document.getElementById('people'), people);
   }
 
@@ -36,17 +51,13 @@ $(document).ready(() => {
     let root = document.createElement('div');
     root.className = 'person';
 
-    let name = document.createElement('div');
-    name.className = 'name';
-    name.innerHTML = person['name'];
-
-    let term = document.createElement('div');
-    term.className = 'term';
-    term.innerHTML = person['term'];
+    let aboutHeader = document.createElement('h3');
+    aboutHeader.innerHTML = person['name'] + ', ' + person['term']
+    root.appendChild(aboutHeader);
 
     let funFact = document.createElement('div');
     funFact.className = 'fun-fact';
-    funFact.className = person['fun-fact'];
+    funFact.innerHTML = person['fun-fact'];
 
     let talk = document.createElement('div');
     talk.className = 'talk';
@@ -56,8 +67,6 @@ $(document).ready(() => {
     coop.className = 'coop';
     coop.innerHTML = person['coop'];
 
-    root.appendChild(name);
-    root.appendChild(term);
     root.appendChild(funFact);
     root.appendChild(talk);
     root.appendChild(coop);
