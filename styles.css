@@ -72,3 +72,10 @@ div {
   content: 'Talk to me about: ';
   color: #dc322f;
 }
+
+.link,
+.link:visited,
+.link:link{
+  color: #657b83;
+  text-decoration: underline;
+}
