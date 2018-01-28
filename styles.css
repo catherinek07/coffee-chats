@@ -78,4 +78,5 @@ div {
 .link:link{
   color: #657b83;
   text-decoration: underline;
+  font-weight: 700;
 }
