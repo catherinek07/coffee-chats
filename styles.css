@@ -1,82 +1,53 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
+:root {
+	--fontSize: 14px;
+	--lineHeight: 2;
 }
 
-html {
-  background-color: #fdf6e3;
+html, body {
+	background-color: #E7E9EB;
+	color: #113654;
+  	font-family: 'Inter', monospace;
 }
 
-body {
-  font-family: 'Roboto Mono', monospace;
-
-  margin: 100px auto;
-  display: block;
-  width: 100%;
-  max-width: 600px;
+p {
+	color: #485d6f;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-weight: 700;
-  color: #657b83;
-  margin-bottom: 24px;
-}
-
-h2 {
-  color: #657b83;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-div {
-  font-size: 14px;
-  color: #657b83;
-  line-height: 1.5;
-}
-
-.divider {
-  margin: 32px 0;
-}
-
-#people {
-
+hr {
+	background-color: #113654;
+	height: 3px;
 }
 
 .person {
-  margin-bottom: 16px;
-  color: #586e75
+	margin: 30px 0;
+	color: #485d6f;
+}
+
+.person h3 {
+	color: #113654;
+	padding-bottom: 3px;
+}
+
+.fun-fact:before, .coop:before, .talk:before {
+	font-weight: 700;
+	color: #113654;
 }
 
 .fun-fact::before {
-  content: 'Fun fact: ';
-  color: #6c71c4
+	content: 'Fun fact: ';
 }
 
 .coop::before {
-  content: 'Last coop: ';
-  color: #2aa198;
+	content: 'Last coop: ';
 }
 
 .talk::before {
-  content: 'Talk to me about: ';
-  color: #dc322f;
+	content: 'Talk to me about: ';
 }
 
 .link,
 .link:visited,
 .link:link{
-  color: #657b83;
-  text-decoration: underline;
-  font-weight: 700;
+	color: #3D93F6;
+	text-decoration: underline;
 }

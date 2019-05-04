@@ -52,7 +52,7 @@ $(document).ready(() => {
     root.className = 'person';
 
     let aboutHeader = document.createElement('h3');
-    aboutHeader.innerHTML = person['name'] + ', ' + person['term']
+    aboutHeader.innerHTML = person['name'] + ' — ' + person['term']
     root.appendChild(aboutHeader);
 
     let funFact = document.createElement('div');
