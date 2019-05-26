@@ -1,48 +1,47 @@
 :root {
 	--fontSize: 14px;
-	--lineHeight: 2;
+	--lineHeight: 1.8;
 }
 
 html, body {
-	background-color: #E7E9EB;
-	color: #113654;
+	background-color: white;
+	color: #424242;
   	font-family: 'Inter', monospace;
 }
 
-p {
-	color: #485d6f;
-}
-
-hr {
-	background-color: #113654;
-	height: 3px;
+h1, h2 {
+	color: #222;
 }
 
 .person {
-	margin: 30px 0;
-	color: #485d6f;
+	margin: 40px 0;
 }
 
 .person h3 {
-	color: #113654;
-	padding-bottom: 2px;
+	color: #222;
+	border-bottom: 3px solid #3D93F6;
+	margin-bottom: 10px;
 }
 
-.fun-fact:before, .coop:before, .talk:before {
+.fun-fact:before, .talk:before {
 	font-weight: 700;
-	color: #113654;
+	color: #222;
+}
+
+.fun-fact, .about, .talk {
+
 }
 
 .fun-fact::before {
 	content: 'Fun fact: ';
 }
 
-.coop::before {
-	content: 'Last coop: ';
-}
-
 .talk::before {
 	content: 'Talk to me about: ';
+}
+
+.about {
+	padding-bottom: 20px;
 }
 
 .link,

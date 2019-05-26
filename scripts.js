@@ -13,7 +13,7 @@ function shuffle(a) {
 }
 
 $(document).ready(() => {
-  $.get('./responses.tsv', processResponse);
+  $.get('./data.tsv', processResponse);
 
   // Go through CSV and return array of people
   function parseResponse(data) {
@@ -23,12 +23,12 @@ $(document).ready(() => {
       let d = row.split('\t');
 
       let person = {};
-      person['name'] = d[1];
-      person['term'] = d[2];
-      person['contact'] = d[3];
-      person['fun-fact'] = d[4];
-      person['talk'] = d[5];
-      person['coop'] = d[6];
+      person['name'] = d[0];
+	  person['about'] = d[1];
+      person['talk'] = d[2];
+      person['fun-fact'] = d[3];
+	  console.log(person);
+      
       return person;
     });
   }
@@ -52,8 +52,12 @@ $(document).ready(() => {
     root.className = 'person';
 
     let aboutHeader = document.createElement('h3');
-    aboutHeader.innerHTML = person['name'] + ' - ' + person['term']
+    aboutHeader.innerHTML = person['name'];
     root.appendChild(aboutHeader);
+
+	let about = document.createElement('div');
+    about.className = 'about';
+    about.innerHTML = person['about'];
 
     let funFact = document.createElement('div');
     funFact.className = 'fun-fact';
@@ -63,13 +67,10 @@ $(document).ready(() => {
     talk.className = 'talk';
     talk.innerHTML = person['talk'];
 
-    let coop = document.createElement('div');
-    coop.className = 'coop';
-    coop.innerHTML = person['coop'];
-
+	root.appendChild(about);
+	root.appendChild(talk);
     root.appendChild(funFact);
-    root.appendChild(talk);
-    root.appendChild(coop);
+    
     return root;
   }
 });
