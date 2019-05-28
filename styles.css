@@ -3,6 +3,18 @@
 	--lineHeight: 1.8;
 }
 
+@media only screen and (max-device-width: 500px) {
+	main {
+		max-width: 100% !important;
+	}
+	h1 {
+		--lineHeight: 1;
+	}
+	:root {
+		--fontSize: 50px;
+	}
+}
+
 main {
 	max-width: 500px;
 	padding: 20px;
