@@ -6,7 +6,7 @@
 @media only screen and (max-device-width: 500px) {
 	main {
 		max-width: 100% !important;
-		zoom: 300%;
+		zoom: 250%;
 	}
 	h1, h2 {
 		--lineHeight: 1;
