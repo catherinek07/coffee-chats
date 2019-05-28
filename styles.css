@@ -1,9 +1,28 @@
 :root {
-	--fontSize: 14px;
+	--fontSize: 15px;
 	--lineHeight: 1.8;
 }
 
+@media only screen and (max-width: 700px) {
+	main {
+		max-width: 100% !important;
+	}
+	h1 {
+		--lineHeight: 1;
+	}
+	:root {
+		--fontSize: 18px;
+	}
+}
+
+main {
+	max-width: 500px;
+	padding: 20px;
+	margin: auto;
+}
+
 html, body {
+	width: 100% !important;
 	background-color: white;
 	color: #424242;
   	font-family: 'Inter', monospace;
@@ -14,7 +33,7 @@ h1, h2 {
 }
 
 .person {
-	margin: 40px 0;
+	margin: 50px 0;
 }
 
 .person h3 {
@@ -26,10 +45,6 @@ h1, h2 {
 .fun-fact:before, .talk:before {
 	font-weight: 700;
 	color: #222;
-}
-
-.fun-fact, .about, .talk {
-
 }
 
 .fun-fact::before {
