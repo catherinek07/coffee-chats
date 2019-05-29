@@ -27,7 +27,6 @@ $(document).ready(() => {
 	  person['about'] = d[1];
       person['talk'] = d[2];
       person['fun-fact'] = d[3];
-	  console.log(person);
       
       return person;
     });
