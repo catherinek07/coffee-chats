@@ -31,13 +31,24 @@ h1, h2 {
 }
 
 .person {
-	margin: 60px 0;
+	margin-bottom: 60px;
 }
 
 .person h3 {
 	color: #222;
 	border-bottom: 3px solid #3D93F6;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 3px;
+}
+
+.person .year {
+	border: 2px solid #3D93F6;
+	color: #3D93F6;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 2px 6px;
+	margin-left: 4px;
+	vertical-align: text-top;
 }
 
 .fun-fact:before, .talk:before {
@@ -55,6 +66,7 @@ h1, h2 {
 
 .about {
 	padding-bottom: 20px;
+	justify-content: space-between;
 }
 
 .link,
@@ -62,4 +74,5 @@ h1, h2 {
 .link:link{
 	color: #3D93F6;
 	text-decoration: underline;
+	font-size: 20px;
 }

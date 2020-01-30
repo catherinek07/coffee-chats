@@ -24,9 +24,10 @@ $(document).ready(() => {
 
       let person = {};
       person['name'] = d[0];
-	  person['about'] = d[1];
-      person['talk'] = d[2];
-      person['fun-fact'] = d[3];
+      person['year'] = d[1]
+	    person['about'] = d[2];
+      person['talk'] = d[3];
+      person['fun-fact'] = d[4];
       
       return person;
     });
@@ -51,10 +52,14 @@ $(document).ready(() => {
     root.className = 'person';
 
     let aboutHeader = document.createElement('h3');
-    aboutHeader.innerHTML = person['name'];
+    let year = document.createElement('span');
+    year.className = 'year';
+    year.innerHTML = person['year'] == 2022 ? '3A' : '4B';
+
+    aboutHeader.innerHTML = person['name'] + " " + year.outerHTML;
     root.appendChild(aboutHeader);
 
-	let about = document.createElement('div');
+	  let about = document.createElement('div');
     about.className = 'about';
     about.innerHTML = person['about'];
 
@@ -66,8 +71,8 @@ $(document).ready(() => {
     talk.className = 'talk';
     talk.innerHTML = person['talk'];
 
-	root.appendChild(about);
-	root.appendChild(talk);
+    root.appendChild(about);
+    root.appendChild(talk);
     root.appendChild(funFact);
     
     return root;
