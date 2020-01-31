@@ -52,9 +52,17 @@ $(document).ready(() => {
     root.className = 'person';
 
     let aboutHeader = document.createElement('h3');
+  
     let year = document.createElement('span');
     year.className = 'year';
-    year.innerHTML = person['year'] == 2022 ? '3A' : '4B';
+    year.innerHTML = person['year'];
+
+    if (person['year'] == 2022) {
+      year.innerHTML = '3A';
+    }
+    else if (person['year'] == 2020) {
+      year.innerHTML = '3B';
+    }
 
     aboutHeader.innerHTML = person['name'] + " " + year.outerHTML;
     root.appendChild(aboutHeader);
