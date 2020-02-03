@@ -61,7 +61,7 @@ $(document).ready(() => {
       year.innerHTML = '3A';
     }
     else if (person['year'] == 2020) {
-      year.innerHTML = '3B';
+      year.innerHTML = '4B';
     }
 
     aboutHeader.innerHTML = person['name'] + " " + year.outerHTML;
