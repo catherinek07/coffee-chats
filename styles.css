@@ -1,5 +1,5 @@
 :root {
-	--fontSize: 15px;
+	--fontSize: 16px;
 	--lineHeight: 1.8;
 }
 
@@ -20,6 +20,7 @@ main {
 }
 
 html, body {
+	line-height: 1.8;
 	width: 100% !important;
 	background-color: white;
 	font-size: 16px;
@@ -32,10 +33,10 @@ h1, h2 {
 }
 
 .person {
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
-.person h3 {
+.person h2 {
 	color: #222;
 	border-bottom: 3px solid #3D93F6;
 	margin-bottom: 15px;
@@ -65,7 +66,7 @@ h1, h2 {
 	content: 'Talk to me about: ';
 }
 
-.about {
+.about, .talk {
 	padding-bottom: 20px;
 }
 

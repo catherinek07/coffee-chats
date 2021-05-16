@@ -51,7 +51,7 @@ $(document).ready(() => {
 		let root = document.createElement('div');
 		root.className = 'person';
 
-		let aboutHeader = document.createElement('h3');
+		let aboutHeader = document.createElement('h2');
 	
 		// let year = document.createElement('span');
 		// year.className = 'year';
@@ -64,7 +64,7 @@ $(document).ready(() => {
 		// 	year.innerHTML = '4B';
 		// }
 
-		//aboutHeader.innerHTML = person['name'] + " " + year.outerHTML;
+		aboutHeader.innerHTML = person['name'];// + " " + year.outerHTML;
 		root.appendChild(aboutHeader);
 
 		let about = document.createElement('div');
@@ -73,7 +73,7 @@ $(document).ready(() => {
 
 		let funFact = document.createElement('div');
 		funFact.className = 'fun-fact';
-		funFact.innerHTML = person['fun-fact'];
+		funFact.innerHTML = person['fun-fact']
 
 		let talk = document.createElement('div');
 		talk.className = 'talk';
