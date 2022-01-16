@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>SE Coffee Chats</title>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
-		<script src="./scripts.js"></script>
-		<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css">
-		<link rel="apple-touch-icon" sizes="57x57" href="./favicon.ico/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="./favicon.ico/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="./favicon.ico/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="./favicon.ico/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="./favicon.ico/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="./favicon.ico/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
-		<link rel="manifest" href="/favicon.ico/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="./favicon.ico/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body>
-		<main>
-			<div>
-				<h1>SE Coffee Chats&nbsp;☕️</h1>
-				<p>
-					SE Coffee Chats is an initiative to help lower-year SEs meet upper-years by matching students to meet up virtually.
-					<br/><br/>
-					To make sure you get the most value out of your chat, tell us who you want to talk to, and we'll match you based on bandwidth.
-					<br/><br/>
-					<b>We encourage you to meet multiple times throughout the term if your match is also interested (ask them).</b>
-				</p>
-				<br/>
-				<br/>
-				<h1>Upper Year SEs (4A)</h1>
-				<br/>
-				<div id="people"></div>
-				<br/><br/>
-			</div>
-		</main>
-	</body>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47938100-10"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
 
-		gtag('config', 'UA-47938100-10');
-	</script>
+<head>
+	<title>SE Coffee Chats</title>
+	<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/favicon.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./favicon.ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<h1>SE Coffee Chats&nbsp;☕️</h1>
+	<p>
+		SE Coffee Chats is an initiative to help lower-year SEs meet upper-years by matching students to meet up
+		virtually and in-person.
+		<br /><br />
+		To make sure you get the most value out of your chat, tell us who you want to talk to, and we'll match
+		you based on bandwidth.
+		<br /><br />
+		<b>We encourage you to meet multiple times throughout the term if your match is also interested (ask them).</b>
+	</p>
+	<br />
+	<br />
+	<h1>Upper Year SEs</h1>
+	<br />
+	<div id="mentors"></div>
+	<br /><br />
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
 </html>
